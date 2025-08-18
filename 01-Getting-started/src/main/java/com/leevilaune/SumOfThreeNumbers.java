@@ -2,7 +2,8 @@ package com.leevilaune;
 
 import java.util.Scanner;
 
-public class Main013 {
+//Task 1.3
+public class SumOfThreeNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
