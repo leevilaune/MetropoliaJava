@@ -1,8 +1,8 @@
-package com.leevilaune;
+package com.leevilaune.gettingstarted;
 
 import java.util.Scanner;
 
-//Task 1.3
+//Task 1.1.3
 public class SumOfThreeNumbers {
 
     public static void main(String[] args) {

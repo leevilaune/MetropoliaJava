@@ -1,6 +1,6 @@
-package com.leevilaune;
+package com.leevilaune.gettingstarted;
 
-//Task 1.4
+//Task 1.1.4
 public class Cat {
     private String name;
 
@@ -14,9 +14,13 @@ public class Cat {
 
     public static void main(String[] args) {
         // Create an instance of the Cat class with a name
-        Cat cat = new Cat("Whiskers");
+        Cat whiskers = new Cat("Whiskers");
+        Cat rex = new Cat("Rex");
 
         // Call the meow method on the cat instance
-        cat.meow();
+        whiskers.meow();
+        whiskers.meow();
+        rex.meow();
+        whiskers.meow();
     }
 }
