@@ -18,7 +18,9 @@ public class SumOfThreeNumbers {
         int third = Integer.parseInt(scanner.nextLine());
 
         System.out.println("The sum of the numbers is " + (first + second + third));
+        //change + to *
         System.out.println("The product of the numbers is " + (first * second * third));
+        //typecast to float and divide sum by 3
         System.out.println("The average of the numbers is " + ((float) (first + second + third) /3));
 
     }
