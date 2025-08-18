@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/CoffeeMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/CoffeeMakerDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/TelevisionViewer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/variables/FahrenheitToCelsius.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/variables/FahrenheitToCelsius.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +64,8 @@
     "Gradle.01-Getting-started [:com.leevilaune.variables.FahrenheitToCelsius.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.Hypotenuse.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.ObsoleteMeasurements.main()].executor": "Run",
+    "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.TelevisionViewer.main()].executor": "Run",
+    "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.classes.CoffeeMakerDriver.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -88,11 +95,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leevilaune/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

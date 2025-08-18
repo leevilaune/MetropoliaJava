@@ -7,11 +7,11 @@ public class FahrenheitToCelsius {
     public static void main(String[] args){
         Scanner r = new Scanner(System.in);
         System.out.print("Give fahrenheit degrees: ");
-        int fahrenheit = Integer.parseInt(r.nextLine());
-        System.out.printf("%d Fahrenheit is%6.1f %s",fahrenheit,fahrenheitToCelsius(fahrenheit),"celsius");
+        double fahrenheit = Double.parseDouble(r.nextLine());
+        System.out.printf("%.1f Fahrenheit is %.1f %s",fahrenheit,fahrenheitToCelsius(fahrenheit),"celsius");
     }
 
-    public static double fahrenheitToCelsius(int fahrenheit){
+    public static double fahrenheitToCelsius(double fahrenheit){
         return (fahrenheit-32)*((double)5/9);
     }
 }
