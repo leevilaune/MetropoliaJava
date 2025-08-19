@@ -12,6 +12,5 @@ public class CoffeeMakerDriver {
         System.out.println("Coffee amount is 50 ml");
         coffeeMaker.pressOnOff();
         System.out.println("Coffee maker is off");
-
     }
 }

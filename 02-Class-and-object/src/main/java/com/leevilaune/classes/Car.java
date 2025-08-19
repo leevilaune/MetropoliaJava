@@ -11,22 +11,31 @@ public class Car {
     private double speed;
     private double gasolineLevel;
     private String typeName;
-
+    private double targetSpeed;
+    private boolean cruiseControlOn;
+    private double minCruiseSpeed;
+    private double maxCruiseSpeed;
 
     /* This is the method (constructor) called when a new instance of Car is created (with new).
      * Constructors may also have arguments.
      */
     public Car(String typeName) {
-        speed = 0; gasolineLevel = 0;
-        this.typeName = typeName;   // this refers to the object itself.
+        this.speed = 0;
+        this.gasolineLevel = 0;
+        this.typeName = typeName;
+        // this refers to the object itself.
         // The reference is useful if you want to use parameter names that are
         // identical to instance variable names (and for more, later on)
+        this.minCruiseSpeed = 40;
+        this.maxCruiseSpeed = 120;
     }
 
     public Car(double speed, double gasolineLevel, String typeName){
         this.speed = speed;
         this.gasolineLevel = gasolineLevel;
         this.typeName = typeName;
+        this.minCruiseSpeed = 40;
+        this.maxCruiseSpeed = 120;
     }
 
     /* Implementations of some methods.
@@ -56,5 +65,35 @@ public class Car {
     }
     double getGasolineLevel() {
         return gasolineLevel;
+    }
+
+    //cruise control
+    public boolean setTargetSpeed(double targetSpeed){
+        if(targetSpeed>this.maxCruiseSpeed || targetSpeed<this.minCruiseSpeed){
+            return false;
+        }
+        while(targetSpeed != this.speed){
+            if(targetSpeed > this.speed){
+                this.accelerate();
+            } else if (targetSpeed < this.speed) {
+                this.decelerate(10);
+            }
+        }
+        return true;
+    }
+    public double getTargetSpeed(){
+        return this.targetSpeed;
+    }
+    public boolean switchCruiseControl(double targetSpeed){
+        if(this.setTargetSpeed(targetSpeed)){
+            this.cruiseControlOn = !this.cruiseControlOn;
+            return true;
+        }else{
+            this.cruiseControlOn = false;
+            return false;
+        }
+    }
+    public boolean isCruiseControlOn(){
+        return this.cruiseControlOn;
     }
 }
