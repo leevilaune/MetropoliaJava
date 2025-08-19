@@ -27,8 +27,8 @@ public class MultiplicationTableExam {
     }
 
     public static boolean askQuestion(Scanner r, Random random){
-        int firstNum = random.nextInt(1,10);
-        int secondNum = random.nextInt(1,10);
+        int firstNum = random.nextInt(1,11);
+        int secondNum = random.nextInt(1,11);
         System.out.printf("%d * %d = ",firstNum,secondNum);
         int answer = r.nextInt();
         return answer == firstNum * secondNum;

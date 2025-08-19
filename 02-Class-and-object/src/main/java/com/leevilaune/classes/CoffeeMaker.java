@@ -20,9 +20,12 @@ public class CoffeeMaker {
         }
         if(amountMl < 10){
             this.amountMl=10;
+            return;
         } else if (amountMl > 80) {
             this.amountMl=80;
+            return;
         }
+        this.amountMl = amountMl;
     }
 
     public String getCoffeeType(String coffeeType){
@@ -45,5 +48,9 @@ public class CoffeeMaker {
     }
     public boolean isOn(){
         return this.isOn;
+    }
+
+    public String getCoffeeType() {
+        return coffeeType;
     }
 }

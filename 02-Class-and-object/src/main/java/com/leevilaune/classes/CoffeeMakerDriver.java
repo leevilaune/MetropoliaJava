@@ -7,9 +7,9 @@ public class CoffeeMakerDriver {
         coffeeMaker.pressOnOff();
         System.out.println("Coffee maker is on");
         coffeeMaker.setCoffeeType("espresso");
-        System.out.println("Coffee type is espresso");
+        System.out.println("Coffee type is " + coffeeMaker.getCoffeeType());
         coffeeMaker.setAmountMl(50);
-        System.out.println("Coffee amount is 50 ml");
+        System.out.println("Coffee amount is "+coffeeMaker.getAmountMl()+" ml");
         coffeeMaker.pressOnOff();
         System.out.println("Coffee maker is off");
     }
