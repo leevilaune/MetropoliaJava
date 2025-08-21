@@ -19,7 +19,7 @@ public class MaximumSubarraySum {
     }
 
     public static void findMaxSubarray(int[] array) {
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         int startIndex = 0;
         int endIndex = 0;
         int start = 0;

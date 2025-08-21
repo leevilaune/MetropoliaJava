@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/02-Class-and-object" />
+            <option value="$PROJECT_DIR$/03-Inheritance-interface-static" />
           </set>
         </option>
       </GradleProjectSettings>
