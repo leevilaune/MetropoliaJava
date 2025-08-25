@@ -3,7 +3,7 @@ package com.leevilaune.controlstructures;
 public class QuadraticEquation {
 
     public static void main(String[] args){
-        System.out.println(solveQuadraticEquation(2,-3,-2));
+        System.out.println(solveQuadraticEquation(2,3,2));
 
     }
     public static String solveQuadraticEquation(int a,int b, int c){

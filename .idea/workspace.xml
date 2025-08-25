@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/cars/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/cars/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/cars/SportsCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/shapes/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/shapes/ShapeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/shapes/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/AbstractVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/ElectricCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/ElectricVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/interfaces/VehicleDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/library/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/library/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/library/model/LibraryMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/library/system/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/streams/ReadCsvFromUrl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/arrays/MaximumSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/arrays/MaximumSubarraySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/controlstructures/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-Getting-started/src/main/java/com/leevilaune/controlstructures/QuadraticEquation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="31Rq8OFP0ihKHIuZhkPdVuUqwdY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -94,15 +74,16 @@
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.interfaces.VehicleDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.staticv.BankAccount.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.staticv.library.Main.main()].executor": "Run",
+    "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.ReadCsvFromUrl.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/leevilaune/IdeaProjects/MetropoliaJava/03-Inheritance-interface-static/src/main/java/com/leevilaune/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
