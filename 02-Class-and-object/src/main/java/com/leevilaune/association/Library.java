@@ -79,7 +79,7 @@ public class Library {
     }
 
     public Book getMostReviewedBook(){
-        Book mostReviewed = this.books.getFirst();
+        Book mostReviewed = this.books.get(0);
         for(Book b : this.books){
             if(b.getReviews().size() > mostReviewed.getReviews().size()) {
                 mostReviewed = b;
