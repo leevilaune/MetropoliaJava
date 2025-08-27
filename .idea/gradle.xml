@@ -9,10 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01-Getting-started" />
             <option value="$PROJECT_DIR$/02-Class-and-object" />
             <option value="$PROJECT_DIR$/03-Inheritance-interface-static" />
             <option value="$PROJECT_DIR$/04-VCS-and-AI-assisted-coding" />
-            <option value="$PROJECT_DIR$/05-Threads" />
             <option value="$PROJECT_DIR$/05-Threads-and-synchronization" />
           </set>
         </option>

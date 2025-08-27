@@ -34,7 +34,7 @@ public class ParallelNumberSummation {
     public static void main(String[] args) {
         long start = System.nanoTime();
 
-        int size = 1000;
+        int size = 100000000;
         int parts = Runtime.getRuntime().availableProcessors();
         //check that available cores is dividable with size, things break otherwise
         //and i cant be bothered to figure it out

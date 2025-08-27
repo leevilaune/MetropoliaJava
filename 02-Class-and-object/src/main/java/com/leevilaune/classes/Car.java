@@ -68,15 +68,24 @@ public class Car {
     }
 
     //cruise control
-    public boolean setTargetSpeed(double targetSpeed){
-        if(targetSpeed>this.maxCruiseSpeed || targetSpeed<this.minCruiseSpeed){
+    public boolean setTargetSpeed(double targetSpeed) {
+        if (targetSpeed > this.maxCruiseSpeed || targetSpeed < this.minCruiseSpeed) {
             return false;
         }
-        while(targetSpeed != this.speed){
-            if(targetSpeed > this.speed){
+
+        this.targetSpeed = targetSpeed;
+
+        while (this.speed != this.targetSpeed) {
+            if (this.speed < this.targetSpeed) {
                 this.accelerate();
-            } else if (targetSpeed < this.speed) {
+                if (this.speed > this.targetSpeed) {
+                    this.speed = this.targetSpeed;
+                }
+            } else {
                 this.decelerate(10);
+                if (this.speed < this.targetSpeed) {
+                    this.speed = this.targetSpeed;
+                }
             }
         }
         return true;
