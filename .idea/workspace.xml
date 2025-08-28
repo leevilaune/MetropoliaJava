@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/classes/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/BankAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,7 @@
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.association.LibraryMain.main()].executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.classes.CarDriver.main()].executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.classes.CoffeeMakerDriver.main()].executor": "Run",
+    "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.classes.TelevisionViewer.main()].executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.collections.GroceryListManager.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.interfaces.VehicleDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.staticv.BankAccount.main()].executor": "Run",

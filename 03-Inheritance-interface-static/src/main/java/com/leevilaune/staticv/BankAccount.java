@@ -8,8 +8,8 @@ public class BankAccount {
 
     public BankAccount(int accountNumber){
         totalAccounts++;
-        this.balance = 0;
-        this.accountNumber = accountNumber;
+        this.balance = accountNumber;
+        this.accountNumber = totalAccounts;
     }
 
     public void deposit(int amount){
