@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-VCS-and-AI-assisted-coding/src/main/java/com/leevilaune/calculator/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-VCS-and-AI-assisted-coding/src/main/java/com/leevilaune/calculator/CalculatorDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/staticv/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/association/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-Class-and-object/src/main/java/com/leevilaune/association/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +84,8 @@
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.Fibonacci.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.ReadCsvFromUrl.main()].executor": "Run",
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.enrollment.Main.main()].executor": "Run",
+    "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.calculator.CalculatorDemo.main()].executor": "Run",
+    "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.vcs.CalculatorDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.ParallelNumberSummation.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -87,7 +96,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,6 +111,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -108,6 +129,11 @@
           <url>file://$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/cars/SportsCar.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
