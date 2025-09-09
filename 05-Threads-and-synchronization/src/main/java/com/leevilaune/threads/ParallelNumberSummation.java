@@ -51,11 +51,13 @@ public class ParallelNumberSummation {
         }
         start = System.nanoTime();
         System.out.println("Sum: "+sumWithoutThreads(arr));
-        System.out.println("Without Threads execution time: "+(System.nanoTime() - start) + " ns");
-
+        System.out.println("Without Threads execution time: "+(System.nanoTime() - start)/10e6 + " ms");
+        start = System.nanoTime();
+        System.out.println("Sum: "+sumWithoutThreads(arr));
+        System.out.println("Without Threads execution time: "+(System.nanoTime() - start)/10e6 + " ms");
         start = System.nanoTime();
         System.out.println("Sum: "+sumWithThreads(intArr, parts));
-        System.out.println("With Threads execution time: "+(System.nanoTime() - start) + " ns");
+        System.out.println("With Threads execution time: "+(System.nanoTime() - start)/10e6 + " ms");
     }
 
     public static int sumWithoutThreads(int[] arr){

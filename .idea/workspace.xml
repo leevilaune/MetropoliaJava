@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
