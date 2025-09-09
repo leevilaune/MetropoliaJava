@@ -9,8 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/04-VCS-and-AI-assisted-coding/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +83,7 @@
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.enrollment.Main.main()].executor": "Run",
     "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.calculator.CalculatorDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.vcs.CalculatorDemo.main()].executor": "Run",
+    "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.NumberThread.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.ParallelNumberSummation.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",

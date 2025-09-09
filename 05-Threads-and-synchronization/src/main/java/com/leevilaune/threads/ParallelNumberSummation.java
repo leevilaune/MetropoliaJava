@@ -50,11 +50,11 @@ public class ParallelNumberSummation {
             System.out.println("you fucking idiot, array size and split amnt needs to be divisible");
         }
         start = System.nanoTime();
-        System.out.println(sumWithoutThreads(arr));
+        System.out.println("Sum: "+sumWithoutThreads(arr));
         System.out.println((System.nanoTime() - start) + " ns");
 
         start = System.nanoTime();
-        System.out.println(sumWithThreads(intArr, parts));
+        System.out.println("Sum: "+sumWithThreads(intArr, parts));
         System.out.println((System.nanoTime() - start) + " ns");
     }
 
