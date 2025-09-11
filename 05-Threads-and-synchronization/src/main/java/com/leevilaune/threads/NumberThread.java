@@ -74,8 +74,8 @@ public class NumberThread extends Thread{
     }
 
     public static void main(String[] args){
-        NumberThread even = new NumberThread(true,1,0);
-        NumberThread odd = new NumberThread(false,1,0.5);
+        NumberThread even = new NumberThread(true,0,0);
+        NumberThread odd = new NumberThread(false,0,0.5);
         even.start();
         odd.start();
 

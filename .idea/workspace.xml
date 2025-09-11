@@ -9,8 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/sync/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/sync/ReservationSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevilaune/HelloFX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/ParallelNumberSummation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/NumberThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/NumberThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,31 @@
     <projectState path="$PROJECT_DIR$/01-Getting-started">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MetropoliaJava" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MetropoliaJava" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,6 +93,8 @@
     "Gradle.01-Getting-started [:com.leevilaune.variables.FahrenheitToCelsius.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.Hypotenuse.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.ObsoleteMeasurements.main()].executor": "Run",
+    "Gradle.MetropoliaJava [:com.leevilaune.HelloFX.main()].executor": "Run",
+    "Gradle.MetropoliaJava [:com.leevilaune.JavaFXDEmo.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.Main.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.inheritance.shapes.ShapeCalculator.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.interfaces.VehicleDemo.main()].executor": "Run",
@@ -83,6 +114,7 @@
     "Gradle.MetropoliaJava:03-Inheritance-interface-static [:03-Inheritance-interface-static:com.leevilaune.streams.enrollment.Main.main()].executor": "Run",
     "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.calculator.CalculatorDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava:04-VCS-and-AI-assisted-coding [:04-VCS-and-AI-assisted-coding:com.leevilaune.vcs.CalculatorDemo.main()].executor": "Run",
+    "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.sync.ReservationSystem.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.NumberThread.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.ParallelNumberSummation.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -98,6 +130,40 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="HelloFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leevilaune.HelloFX" />
+      <module name="MetropoliaJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leevilaune.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaFXDEmo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leevilaune.JavaFXDEmo" />
+      <module name="MetropoliaJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leevilaune.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloFX" />
+        <item itemvalue="Application.JavaFXDEmo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

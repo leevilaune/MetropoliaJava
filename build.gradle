@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.openjfx:javafx-controls:19"
+    implementation "org.openjfx:javafx-fxml:19"
+}
+
+application {
+    mainClass = 'com.leevilaune.HelloFX'
+}
