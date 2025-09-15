@@ -9,9 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/currency/controller/CurrencyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/currency/model/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/currency/view/CurrencyView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/06-GUI-events-MVC/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +121,8 @@
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.sync.ReservationSystem.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.NumberThread.main()].executor": "Run",
     "Gradle.MetropoliaJava:05-Threads-and-synchronization [:05-Threads-and-synchronization:com.leevilaune.threads.ParallelNumberSummation.main()].executor": "Run",
+    "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.Main.main()].executor": "Run",
+    "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.currency.view.CurrencyView.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "full.screen.before.presentation.mode": "false",
@@ -132,7 +136,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.MetropoliaJava">
+  <component name="RunManager">
     <configuration name="HelloFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leevilaune.HelloFX" />
       <module name="MetropoliaJava.main" />
