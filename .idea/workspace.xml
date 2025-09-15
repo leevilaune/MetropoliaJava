@@ -9,12 +9,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/sync/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/sync/ReservationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leevilaune/HelloFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/dictionary/DictionaryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/NumberThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-Threads-and-synchronization/src/main/java/com/leevilaune/threads/NumberThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leevilaune/HelloFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leevilaune/HelloFX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +71,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -93,6 +102,7 @@
     "Gradle.01-Getting-started [:com.leevilaune.variables.FahrenheitToCelsius.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.Hypotenuse.main()].executor": "Run",
     "Gradle.01-Getting-started [:com.leevilaune.variables.ObsoleteMeasurements.main()].executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.HelloFX.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.JavaFXDEmo.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.Main.main()].executor": "Run",
@@ -100,6 +110,7 @@
     "Gradle.MetropoliaJava [:com.leevilaune.interfaces.VehicleDemo.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.interfaces.VehicleMain.main()].executor": "Run",
     "Gradle.MetropoliaJava [:com.leevilaune.threads.NumberThread.main()].executor": "Run",
+    "Gradle.MetropoliaJava.executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.TelevisionViewer.main()].executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.association.LibraryMain.main()].executor": "Run",
     "Gradle.MetropoliaJava:02-Class-and-object [:02-Class-and-object:com.leevilaune.classes.CarDriver.main()].executor": "Run",
@@ -122,7 +133,7 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/leevilaune/IdeaProjects/MetropoliaJava/04-VCS-and-AI-assisted-coding/src/main/java/com/leevilaune/Main.java",
+    "onboarding.tips.debug.path": "/Users/leevilaune/IdeaProjects/MetropoliaJava/06-GUI-events-MVC/src/main/java/com/leevilaune/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -130,7 +141,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.MetropoliaJava">
     <configuration name="HelloFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leevilaune.HelloFX" />
       <module name="MetropoliaJava.main" />
@@ -157,8 +168,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MetropoliaJava" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MetropoliaJava" />
         <item itemvalue="Application.HelloFX" />
         <item itemvalue="Application.JavaFXDEmo" />
       </list>
@@ -198,6 +230,11 @@
           <url>file://$PROJECT_DIR$/03-Inheritance-interface-static/src/main/java/com/leevilaune/inheritance/cars/SportsCar.java</url>
           <line>9</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/fi/group4/project/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
