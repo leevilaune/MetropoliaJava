@@ -18,7 +18,6 @@ public class DictionaryView extends Application {
 
     public DictionaryView(){
         this.dictionaryController = new DictionaryController(new Dictionary());
-
     }
 
     @Override
