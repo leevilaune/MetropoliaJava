@@ -13,5 +13,5 @@ javafx {
 }
 
 application {
-    mainClass = 'com.leevilaune.virtualpet.PetView'
+    mainClass = 'com.leevilaune.notebook.Main'
 }
