@@ -14,8 +14,7 @@ public class ThreadSafeList<T> {
     public synchronized boolean remove(T element) {
         return list.remove(element);
     }
-
-    public synchronized void remove(int element){
+    public synchronized void remove(int element) {
         list.remove(element);
     }
 
@@ -31,7 +30,7 @@ class Main{
             for (int i = 0; i < 100; i++) {
                 safeList.add((int) (Math.random() * 10));
             }
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 50; i++) {
                 safeList.remove(0);
             }
         };
