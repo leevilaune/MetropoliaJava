@@ -15,3 +15,8 @@ javafx {
 application {
     mainClass = 'com.leevilaune.HelloFX'
 }
+
+dependencies{
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
+
+}
