@@ -9,13 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/dao/CurrencyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/datasource/MariaDBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/controller/PetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/model/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/view/PetView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/controller/CurrencyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/entity/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/view/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/view/CurrencyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/resources/currency.sql" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/resources/currency.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/06-GUI-events-MVC/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/PetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-GUI-events-MVC/src/main/java/com/leevilaune/virtualpet/PetView.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
