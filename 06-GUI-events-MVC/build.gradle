@@ -13,5 +13,5 @@ javafx {
 }
 
 application {
-    mainClass = 'com.leevilaune.notebook.Main'
+    mainClass = 'com.leevilaune.currency.view.CurrencyView'
 }

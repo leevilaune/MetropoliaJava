@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/04-VCS-and-AI-assisted-coding" />
             <option value="$PROJECT_DIR$/05-Threads-and-synchronization" />
             <option value="$PROJECT_DIR$/06-GUI-events-MVC" />
+            <option value="$PROJECT_DIR$/07-Database-JDBC" />
           </set>
         </option>
       </GradleProjectSettings>
