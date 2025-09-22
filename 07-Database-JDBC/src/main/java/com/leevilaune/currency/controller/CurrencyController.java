@@ -1,33 +1,42 @@
 package com.leevilaune.currency.controller;
 
-import com.leevilaune.currency.model.Currency;
+import com.leevilaune.currency.dao.CurrencyDao;
+import com.leevilaune.currency.entity.Currency;
 
 import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class CurrencyController {
 
     private Map<String, Currency> currencies;
     private DecimalFormat decimalFormat;
+    private CurrencyDao currencyDao;
 
     public CurrencyController(){
         this.currencies = new HashMap<>();
-        this.setRates();
         this.decimalFormat = new DecimalFormat("####0.00");
+        this.currencyDao = new CurrencyDao();
 
     }
 
-    public double getConversion(String curr1,String curr2){
-
-        return Double.parseDouble(decimalFormat.format(currencies.get(curr2).getToUSD()/currencies.get(curr1).getToUSD()));
+    public double getConversion(String curr1,String curr2,double multiplier){
+        double rate1 = this.currencyDao.getUSDRate(curr1);
+        double rate2 = this.currencyDao.getUSDRate(curr2);
+        if(rate1 == -1 || rate2 == -1){
+            return -1;
+        }
+        return Double.parseDouble(decimalFormat.format(multiplier*(rate2/rate1)));
     }
 
     public Set<String> getCurrencies(){
-        return this.currencies.keySet();
+        Set<String> currencies = new TreeSet<>(this.currencyDao.getAllCurrencyCodes());
+        if(currencies.isEmpty()){
+            return null;
+        }
+        return currencies;
     }
 
+    /*
     private void setRates(){
         currencies.put("USD", new Currency("USD", "United States Dollar", 1.0));
         currencies.put("EUR", new Currency("EUR", "Euro", 0.8515200899));
@@ -60,4 +69,6 @@ public class CurrencyController {
         currencies.put("AMD", new Currency("AMD", "Armenian Dram", 381.702665681));
         currencies.put("AZN", new Currency("AZN", "Azerbaijani Manat", 1.7));
     }
+
+     */
 }

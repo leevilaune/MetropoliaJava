@@ -1,4 +1,4 @@
-package com.leevilaune.currency.model;
+package com.leevilaune.currency.entity;
 
 public class Currency {
     private String code;

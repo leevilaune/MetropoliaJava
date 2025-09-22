@@ -1,6 +1,7 @@
 package com.leevilaune.currency.view;
 
 import com.leevilaune.currency.controller.CurrencyController;
+import com.leevilaune.currency.datasource.MariaDBConnection;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -11,8 +12,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+
+import java.util.Set;
+import java.util.TreeSet;
 
 public class CurrencyView extends Application {
 
@@ -27,7 +34,9 @@ public class CurrencyView extends Application {
     public void start(Stage stage) throws Exception {
 
         Font normalFont = new Font("sans-serif",14);
-
+        Set<String> currencies = this.controller.getCurrencies();
+        Label resultLabel = new Label();
+        resultLabel.setFont(normalFont);
         Pane currencyPane = new FlowPane(Orientation.VERTICAL);
         currencyPane.setPadding(new Insets(10,10,10,10));
         Pane currencyFieldsPane = new FlowPane(Orientation.HORIZONTAL);
@@ -35,18 +44,23 @@ public class CurrencyView extends Application {
         amountField.setMaxWidth(185);
         Pane curr1Pane = new VBox();
         ComboBox<String> currency1 = new ComboBox<>();
-        currency1.getItems().addAll(this.controller.getCurrencies());
         curr1Pane.getChildren().add(new Label("FROM"));
         curr1Pane.getChildren().add(currency1);
         Pane curr2Pane = new VBox();
         ComboBox<String> currency2 = new ComboBox<>();
-        currency2.getItems().addAll(this.controller.getCurrencies());
         curr2Pane.getChildren().add(new Label("TO"));
         curr2Pane.getChildren().add(currency2);
+        if(currencies == null){
+            resultLabel.setText("Database connection failed");
+            currency1.getItems().addAll(new TreeSet<>());
+            currency2.getItems().addAll(new TreeSet<>());
+        }else{
+            currency1.getItems().addAll(currencies);
+            currency2.getItems().addAll(currencies);
+        }
 
         Button button = new Button("Convert");
-        Label resultLabel = new Label();
-        resultLabel.setFont(normalFont);
+
 
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -61,9 +75,14 @@ public class CurrencyView extends Application {
                         return;
                     }
                     resultLabel.setStyle("-fx-text-fill: black;");
+                    double conversion = controller.getConversion(curr1,curr2,amount);
+                    if (conversion == -1){
+                        resultLabel.setStyle("-fx-text-fill: #ff0000;");
+                        resultLabel.setText("Database connection failed");
+                    }
                     resultLabel.setText(amountField.getText()+ " " + curr1 +
                             " is " +
-                            amount*controller.getConversion(curr1,curr2)
+                            conversion
                             + " " + curr2);
                 }catch(Exception e){
                     resultLabel.setStyle("-fx-text-fill: #ff0000;");
@@ -96,5 +115,6 @@ public class CurrencyView extends Application {
 
     public static void main(String[] args) {
         launch();
+        MariaDBConnection.terminate();
     }
 }

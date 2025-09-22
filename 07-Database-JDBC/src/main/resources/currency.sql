@@ -4,14 +4,14 @@ CREATE DATABASE currencydb;
 
 USE currencydb;
 
-CREATE TABLE Currency (
+CREATE TABLE currency (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    abbreviation VARCHAR(5) NOT NULL UNIQUE,
+    code VARCHAR(5) NOT NULL UNIQUE,
     name VARCHAR(50) NOT NULL,
     rate_to_usd DECIMAL(18,10) NOT NULL
 );
 
-INSERT INTO Currency (abbreviation, name, rate_to_usd) VALUES
+INSERT INTO currency (code, name, rate_to_usd) VALUES
 ('USD', 'United States Dollar', 1.0),
 ('EUR', 'Euro', 0.8515200899),
 ('GBP', 'British Pound Sterling', 0.7357800845),
