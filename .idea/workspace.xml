@@ -11,7 +11,6 @@
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/dao/CurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/java/com/leevilaune/currency/dao/CurrencyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-Database-JDBC/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07-Database-JDBC/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
@@ -229,8 +233,8 @@
         <item itemvalue="Shell Script.ssh_tunnel.sh" />
         <item itemvalue="Gradle.MetropoliaJava" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.HelloFX" />
         <item itemvalue="Application.JavaFXDEmo" />
+        <item itemvalue="Application.HelloFX" />
       </list>
     </recent_temporary>
   </component>

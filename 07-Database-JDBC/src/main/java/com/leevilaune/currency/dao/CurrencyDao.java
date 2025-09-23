@@ -29,7 +29,7 @@ public class CurrencyDao {
 
     public List<Currency> findAll() {
         EntityManager em = MariaDbJpaConnection.getInstance();
-        List<Currency> emps = em.createQuery("select e from Currency e").getResultList();
+        List<Currency> emps = em.createQuery("select c from Currency c").getResultList();
         return emps;
     }
 
