@@ -8,11 +8,15 @@ public class MariaDbJpaConnection {
     private static EntityManager em = null;
 
     public static EntityManager getInstance() {
-        if (em==null) {
-            if (emf==null) {
-                emf = Persistence.createEntityManagerFactory("CompanyMariaDbUnit");
+        try{
+            if (em==null) {
+                if (emf==null) {
+                    emf = Persistence.createEntityManagerFactory("CompanyMariaDbUnit");
+                }
+                em = emf.createEntityManager();
             }
-            em = emf.createEntityManager();
+        }catch (Exception e){
+            return null;
         }
         return em;
     }

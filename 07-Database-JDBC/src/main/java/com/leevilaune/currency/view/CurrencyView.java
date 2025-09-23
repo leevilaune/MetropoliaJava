@@ -36,7 +36,11 @@ public class CurrencyView extends Application {
         Set<String> currencies = this.controller.getCurrencies();
         Label resultLabel = new Label();
         resultLabel.setFont(normalFont);
+
         Pane currencyPane = new FlowPane(Orientation.VERTICAL);
+
+        Scene scene = new Scene(currencyPane,400,200);
+
         currencyPane.setPadding(new Insets(10,10,10,10));
         Pane currencyFieldsPane = new FlowPane(Orientation.HORIZONTAL);
         TextField amountField = new TextField("Amount");
@@ -59,7 +63,6 @@ public class CurrencyView extends Application {
         }
 
         Button button = new Button("Convert");
-
 
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -105,11 +108,64 @@ public class CurrencyView extends Application {
 
         currencyPane.getChildren().add(button);
         currencyPane.getChildren().add(resultLabel);
+        Button addCurrencyButton = new Button("Add");
+        addCurrencyButton.setOnAction(event -> {
+            Stage s = new Stage();
+            s.setScene(new Scene(addCurrencyPane(currency1,currency2)));
+            s.show();
+        });
 
-        Scene scene = new Scene(currencyPane,400,200);
-        stage.setScene(scene);
+        currencyPane.getChildren().add(addCurrencyButton);
+
+        if(currencies == null){
+            stage.setScene(dbErrorScene(stage,scene,currency1,currency2));
+        }else{
+            stage.setScene(scene);
+        }
         stage.setTitle("Currency Converter");
         stage.show();
+    }
+
+    public Pane addCurrencyPane(ComboBox<String> curr1, ComboBox<String> curr2){
+        Pane pane = new VBox();
+        pane.setPadding(new Insets(10,10,10,10));
+        TextField code = new TextField("code");
+        TextField name = new TextField("name");
+        TextField usd = new TextField("as usd");
+        Button submit = new Button("Submit");
+        Label failLabel = new Label();
+        failLabel.setVisible(false);
+        submit.setOnAction(event -> {
+            try{
+                controller.addCurrency(code.getText(), name.getText(), Double.parseDouble(usd.getText()));
+                curr1.getItems().add(code.getText());
+                curr2.getItems().add(code.getText());
+            }catch (Exception e){
+                System.out.println("Exception");
+                failLabel.setText("Some value cant be used");
+                failLabel.setVisible(true);
+            }
+        });
+        pane.getChildren().addAll(code,name,usd,submit,failLabel);
+        return pane;
+    }
+    public Scene dbErrorScene(Stage s, Scene converterScene,ComboBox<String> curr1, ComboBox<String> curr2){
+        Pane pane = new VBox();
+        Scene errorScene = new Scene(pane);
+        Label errorLabel = new Label("Database connection failed");
+        errorLabel.setStyle("-fx-fill-color: red;");
+        Button errorButton = new Button("Retry");
+        pane.getChildren().addAll(errorLabel,errorButton);
+        errorButton.setOnAction(event -> {
+            if(controller.getCurrencies() != null){
+                s.setScene(converterScene);
+                curr1.getItems().addAll(this.controller.getCurrencies());
+                curr2.getItems().addAll(this.controller.getCurrencies());
+
+            }
+        });
+
+        return errorScene;
     }
 
     public static void main(String[] args) {
