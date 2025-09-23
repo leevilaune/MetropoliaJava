@@ -5,6 +5,7 @@ import com.leevilaune.currency.entity.Currency;
 
 import java.text.DecimalFormat;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class CurrencyController {
 
@@ -20,8 +21,8 @@ public class CurrencyController {
     }
 
     public double getConversion(String curr1,String curr2,double multiplier){
-        double rate1 = this.currencyDao.getUSDRate(curr1);
-        double rate2 = this.currencyDao.getUSDRate(curr2);
+        double rate1 = this.currencyDao.find(curr1).getToUSD();
+        double rate2 = this.currencyDao.find(curr2).getToUSD();
         if(rate1 == -1 || rate2 == -1){
             return -1;
         }
@@ -29,7 +30,8 @@ public class CurrencyController {
     }
 
     public Set<String> getCurrencies(){
-        Set<String> currencies = new TreeSet<>(this.currencyDao.getAllCurrencyCodes());
+
+        Set<String> currencies = this.currencyDao.findAll().stream().map(Currency::getCode).collect(Collectors.toSet());
         if(currencies.isEmpty()){
             return null;
         }

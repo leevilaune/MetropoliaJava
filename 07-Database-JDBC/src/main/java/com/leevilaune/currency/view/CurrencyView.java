@@ -1,7 +1,6 @@
 package com.leevilaune.currency.view;
 
 import com.leevilaune.currency.controller.CurrencyController;
-import com.leevilaune.currency.datasource.MariaDBConnection;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -115,6 +114,5 @@ public class CurrencyView extends Application {
 
     public static void main(String[] args) {
         launch();
-        MariaDBConnection.terminate();
     }
 }

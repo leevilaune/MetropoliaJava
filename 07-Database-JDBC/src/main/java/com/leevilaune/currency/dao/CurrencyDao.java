@@ -1,56 +1,47 @@
 package com.leevilaune.currency.dao;
 
-import java.sql.*;
-import java.util.*;
+import com.leevilaune.currency.datasource.MariaDbJpaConnection;
+import com.leevilaune.currency.entity.*;
+import jakarta.persistence.EntityManager;
 
-import java.sql.ResultSet;
+import javax.swing.plaf.ColorUIResource;
 import java.util.List;
-
-import com.leevilaune.currency.datasource.MariaDBConnection;
 
 public class CurrencyDao {
 
-
-    public List<String> getAllCurrencyCodes() {
-        String sql = "SELECT code FROM currency";
-        List<String> currencies = new ArrayList<>();
-
-        try {
-            Connection conn = MariaDBConnection.getConnection();
-            if (conn == null) {
-                System.err.println("Database connection failed");
-                return Collections.emptyList();
-            }
-            Statement s = conn.createStatement();
-            ResultSet rs = s.executeQuery(sql);
-
-            while (rs.next()) {
-                currencies.add(rs.getString("code"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return currencies;
-
-        }
-        return currencies;
+    public void persist(Currency curr) {
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        em.getTransaction().begin();
+        em.persist(curr);
+        em.getTransaction().commit();
     }
 
-    public double getUSDRate(String code) {
-        String sql = "SELECT rate_to_usd FROM currency WHERE code=?";
+    public Currency find(int id) {
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        return em.find(Currency.class, id);
+    }
+    public Currency find(String code){
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        return em.find(Currency.class,code);
+    }
 
-        try {
-            Connection conn = MariaDBConnection.getConnection();
-            if(conn == null){
-                return -1;
-            }
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1,code);
-            ResultSet rs = ps.executeQuery();
-            rs.next();
-            return rs.getDouble(1);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return -1;
+    public List<Currency> findAll() {
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        List<Currency> emps = em.createQuery("select e from Currency e").getResultList();
+        return emps;
+    }
+
+    public void update(Currency curr) {
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        em.getTransaction().begin();
+        em.merge(curr);
+        em.getTransaction().commit();
+    }
+
+    public void delete(Currency curr) {
+        EntityManager em = MariaDbJpaConnection.getInstance();
+        em.getTransaction().begin();
+        em.remove(curr);
+        em.getTransaction().commit();
     }
 }
