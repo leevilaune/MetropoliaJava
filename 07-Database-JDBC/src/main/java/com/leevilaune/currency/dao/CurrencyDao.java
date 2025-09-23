@@ -22,7 +22,9 @@ public class CurrencyDao {
     }
     public Currency find(String code){
         EntityManager em = MariaDbJpaConnection.getInstance();
-        return em.find(Currency.class,code);
+        return em.createQuery("select c from Currency c where c.code = :code", Currency.class)
+                .setParameter("code", code)
+                .getSingleResult();
     }
 
     public List<Currency> findAll() {
