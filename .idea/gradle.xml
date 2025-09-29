@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/05-Threads-and-synchronization" />
             <option value="$PROJECT_DIR$/06-GUI-events-MVC" />
             <option value="$PROJECT_DIR$/07-Database-JDBC" />
+            <option value="$PROJECT_DIR$/08-JUnit-and-Functional" />
           </set>
         </option>
       </GradleProjectSettings>

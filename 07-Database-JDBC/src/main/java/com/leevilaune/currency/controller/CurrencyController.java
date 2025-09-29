@@ -1,6 +1,7 @@
 package com.leevilaune.currency.controller;
 
 import com.leevilaune.currency.dao.CurrencyDao;
+import com.leevilaune.currency.dao.TransactionDao;
 import com.leevilaune.currency.entity.Currency;
 
 import java.text.DecimalFormat;
@@ -12,11 +13,13 @@ public class CurrencyController {
     private Map<String, Currency> currencies;
     private DecimalFormat decimalFormat;
     private CurrencyDao currencyDao;
+    private TransactionDao transactionDao;
 
     public CurrencyController(){
         this.currencies = new HashMap<>();
         this.decimalFormat = new DecimalFormat("####0.00");
         this.currencyDao = new CurrencyDao();
+        this.transactionDao = new TransactionDao();
 
     }
 
@@ -24,12 +27,16 @@ public class CurrencyController {
         if(this.currencyDao.find(curr1) == null || this.currencyDao.find(curr2)==null){
             return -1;
         }
-        double rate1 = this.currencyDao.find(curr1).getToUSD();
-        double rate2 = this.currencyDao.find(curr2).getToUSD();
+        Currency currency1 = this.currencyDao.find(curr1);
+        Currency currency2 = this.currencyDao.find(curr2);
+
+        double rate1 = currency1.getToUSD();
+        double rate2 = currency2.getToUSD();
 
         if(rate1 == -1 || rate2 == -1){
             return -1;
         }
+        this.transactionDao.persist(currency1,currency2,multiplier);
         return Double.parseDouble(decimalFormat.format(multiplier*(rate2/rate1)));
     }
 
