@@ -9,6 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/test/java/com/leevilaune/palindrome/PalindromeCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +125,7 @@
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.currency.view.CurrencyView.main()].executor": "Run",
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.notebook.Main.main()].executor": "Run",
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.virtualpet.PetView.main()].executor": "Run",
+    "Gradle.PalindromeCheckerTest.executor": "Run",
     "Gradle.PenTest.executor": "Run",
     "Gradle.StringManipulatorTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -152,20 +155,7 @@
       <recent name="$PROJECT_DIR$/06-GUI-events-MVC/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StringManipulatorTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leevilaune.sync.Main" />
-      <module name="MetropoliaJava.05-Threads-and-synchronization.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leevilaune.sync.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.PalindromeCheckerTest">
     <configuration name="MetropoliaJava" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,6 +174,30 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PalindromeCheckerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":08-JUnit-and-Functional:test" />
+            <option value="--tests" />
+            <option value="&quot;com.leevilaune.palindrome.PalindromeCheckerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PenTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -251,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PalindromeCheckerTest" />
         <item itemvalue="Gradle.StringManipulatorTest" />
         <item itemvalue="Gradle.PenTest" />
         <item itemvalue="Shell Script.ssh_tunnel.sh" />
         <item itemvalue="Gradle.MetropoliaJava" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
