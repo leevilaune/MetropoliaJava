@@ -9,8 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/test/java/com/leevilaune/palindrome/PalindromeCheckerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/shoppingcart/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/test/java/com/leevilaune/shoppingcart/ShoppingCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +56,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -127,10 +128,13 @@
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.virtualpet.PetView.main()].executor": "Run",
     "Gradle.PalindromeCheckerTest.executor": "Run",
     "Gradle.PenTest.executor": "Run",
+    "Gradle.ShoppingCartTest.executor": "Run",
     "Gradle.StringManipulatorTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.ssh_tunnel.sh.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -154,28 +158,14 @@
       <recent name="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/resources/javadoc" />
       <recent name="$PROJECT_DIR$/06-GUI-events-MVC/src/main/resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.leevilaune.shoppingcart" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.PalindromeCheckerTest">
-    <configuration name="MetropoliaJava" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.ShoppingCartTest">
     <configuration name="PalindromeCheckerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -214,6 +204,30 @@
             <option value=":08-JUnit-and-Functional:test" />
             <option value="--tests" />
             <option value="&quot;com.leevilaune.pen.PenTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShoppingCartTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":08-JUnit-and-Functional:test" />
+            <option value="--tests" />
+            <option value="&quot;com.leevilaune.shoppingcart.ShoppingCartTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -265,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ShoppingCartTest" />
         <item itemvalue="Gradle.PalindromeCheckerTest" />
         <item itemvalue="Gradle.StringManipulatorTest" />
         <item itemvalue="Gradle.PenTest" />
         <item itemvalue="Shell Script.ssh_tunnel.sh" />
-        <item itemvalue="Gradle.MetropoliaJava" />
       </list>
     </recent_temporary>
   </component>
