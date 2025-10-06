@@ -14,12 +14,11 @@ public class Main {
         people.add(new Person("Clara", 22, "Espoo"));
         people.add(new Person("David", 28, "Turku"));
 
-        people.sort(Comparator.comparing(p -> p.getAge()));
+        people.sort(Comparator.comparingInt(p -> p.getAge()));
         System.out.println("List in ascending order");
         people.forEach(System.out::println);
         System.out.println("People living in Helsinki");
         people.removeIf(p -> !p.getCity().equalsIgnoreCase("Helsinki"));
         people.forEach(System.out::println);
-
     }
 }

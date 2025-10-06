@@ -9,10 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/collectionoper/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/functional/MeanOfArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +127,7 @@
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.notebook.Main.main()].executor": "Run",
     "Gradle.MetropoliaJava:06-GUI-events-MVC [:06-GUI-events-MVC:com.leevilaune.virtualpet.PetView.main()].executor": "Run",
     "Gradle.MetropoliaJava:08-JUnit-and-Functional [:08-JUnit-and-Functional:com.leevilaune.collectionoper.Main.main()].executor": "Run",
+    "Gradle.MetropoliaJava:08-JUnit-and-Functional [:08-JUnit-and-Functional:com.leevilaune.functional.MeanOfArray.main()].executor": "Run",
     "Gradle.MetropoliaJava:08-JUnit-and-Functional [:08-JUnit-and-Functional:com.leevilaune.lambdasort.Main.main()].executor": "Run",
     "Gradle.PalindromeCheckerTest.executor": "Run",
     "Gradle.PenTest.executor": "Run",
@@ -168,13 +168,26 @@
       <recent name="com.leevilaune.shoppingcart" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MeanOfArray">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leevilaune.lambdasort.Main" />
       <module name="MetropoliaJava.08-JUnit-and-Functional.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leevilaune.lambdasort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeanOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leevilaune.functional.MeanOfArray" />
+      <module name="MetropoliaJava.08-JUnit-and-Functional.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leevilaune.functional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,7 +208,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromeCheckerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PenTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,31 +221,7 @@
           <list>
             <option value=":08-JUnit-and-Functional:test" />
             <option value="--tests" />
-            <option value="&quot;com.leevilaune.palindrome.PalindromeCheckerTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ShoppingCartTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":08-JUnit-and-Functional:test" />
-            <option value="--tests" />
-            <option value="&quot;com.leevilaune.shoppingcart.ShoppingCartTest&quot;" />
+            <option value="&quot;com.leevilaune.pen.PenTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -269,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MeanOfArray" />
+        <item itemvalue="Gradle.StringManipulatorTest" />
+        <item itemvalue="Gradle.PenTest" />
         <item itemvalue="Application.com.leevilaune.collectionoper.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.PalindromeCheckerTest" />
-        <item itemvalue="Gradle.ShoppingCartTest" />
-        <item itemvalue="Gradle.StringManipulatorTest" />
       </list>
     </recent_temporary>
   </component>
