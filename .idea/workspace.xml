@@ -9,9 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68742e0a-d3ec-404f-afc5-06a732d2a61b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/functional/MeanOfArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/functional/FilteringNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/08-JUnit-and-Functional/src/main/java/com/leevilaune/lambdasort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +167,13 @@
       <recent name="com.leevilaune.shoppingcart" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MeanOfArray">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leevilaune.lambdasort.Main" />
+  <component name="RunManager" selected="Application.FilteringNumbers">
+    <configuration name="FilteringNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leevilaune.functional.FilteringNumbers" />
       <module name="MetropoliaJava.08-JUnit-and-Functional.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leevilaune.lambdasort.*" />
+          <option name="PATTERN" value="com.leevilaune.functional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FilteringNumbers" />
         <item itemvalue="Application.MeanOfArray" />
         <item itemvalue="Gradle.StringManipulatorTest" />
         <item itemvalue="Gradle.PenTest" />
         <item itemvalue="Application.com.leevilaune.collectionoper.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
