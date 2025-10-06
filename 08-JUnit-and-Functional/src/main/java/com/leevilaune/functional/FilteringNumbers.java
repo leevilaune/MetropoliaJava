@@ -10,11 +10,13 @@ public class FilteringNumbers {
                 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         ));
 
-        int sumOfDoubledOddNums = numbers.stream()
+        System.out.println(sumOfDoubledOddNums(numbers));
+    }
+    public static double sumOfDoubledOddNums(ArrayList<Integer> numbers){
+        return numbers.stream()
                 .filter(i -> i%2!=0)
                 .map(i -> i*2)
                 .reduce(0, Integer::sum);
-        System.out.println(sumOfDoubledOddNums);
     }
 
 }
