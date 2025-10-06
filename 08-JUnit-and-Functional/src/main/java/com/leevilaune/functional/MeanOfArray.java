@@ -11,8 +11,7 @@ public class MeanOfArray {
     }
 
     public static double mean(int[] numbers){
-        double mean = Arrays.stream(numbers)
+        return Arrays.stream(numbers)
                 .reduce(0, Integer::sum) / (double) numbers.length;
-        return mean;
     }
 }
